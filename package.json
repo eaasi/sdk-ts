@@ -9,6 +9,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "check:types": "tsc --noEmit",
     "clean": "rm -rv ./dist"
   },
   "dependencies": {
