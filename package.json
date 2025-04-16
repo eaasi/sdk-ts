@@ -8,6 +8,9 @@
   "engines": {
     "node": ">=20"
   },
+  "scripts": {
+    "clean": "rm -rv ./dist"
+  },
   "dependencies": {
     "openapi-fetch": "^0.13.5"
   },
