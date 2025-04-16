@@ -4,5 +4,8 @@
   "description": "TypeScript SDK for the EAASI platform",
   "license": "Apache-2.0",
   "type": "module",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "openapi-fetch": "^0.13.5"
+  }
 }
