@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES2023"
+    ],
+    "module": "NodeNext",
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist/esm",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "rewriteRelativeImportExtensions": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2022"
+  },
+  "include": [
+    "./src"
+  ]
+}
