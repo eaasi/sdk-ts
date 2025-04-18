@@ -11,6 +11,7 @@
   "scripts": {
     "build:esm": "tsc --module nodenext --outDir ./dist/esm",
     "build:cjs": "tsc --module commonjs --outDir ./dist/cjs",
+    "postbuild:cjs": "./scripts/package-cjs.sh > ./dist/cjs/package.json",
     "build": "pnpm run build:esm && pnpm run build:cjs",
     "check:types": "tsc --noEmit",
     "clean": "rm -rv ./dist"
