@@ -21,6 +21,28 @@ It is highly recommended to enable the following TypeScript compiler option in y
 }
 ```
 
+## Getting Started
+
+This SDK uses the type-safe [`openapi-fetch`](https://openapi-ts.dev/openapi-fetch) client that is configured to pull in the OpenAPI schema for the EAASI API.
+More information about how that works can be found in the upstream [documentation](https://openapi-ts.dev/openapi-fetch/#basic-usage).
+
+### Basic Usage
+
+```ts
+import { createClientV1alpha } from "@eaasi/sdk-ts";
+
+const client = createClientV1alpha({ baseUrl: "http://localhost:8080/api/v1alpha" });
+
+const {
+  data, // only present if 2XX response
+  error, // only present if 4XX or 5XX response
+} = await client.GET("/admin/build-info");
+
+if (!error) {
+  console.log("Build version: " + data.version);
+}
+```
+
 ## License
 
 This SDK is distributed under the terms of the [Apache-2.0](./LICENSE) license.
