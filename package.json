@@ -17,6 +17,11 @@
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
     },
+    "./api/*.js": {
+      "types": "./dist/types/api/*.d.ts",
+      "import": "./dist/esm/api/*.js",
+      "require": "./dist/cjs/api/*.js"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
